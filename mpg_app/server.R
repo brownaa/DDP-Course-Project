@@ -4,6 +4,9 @@ library(shiny)
 shinyServer(function(input, output) {
     sidebarLayout(position = "right",
         sidebarPanel( "sidebar panel"),
-        mainPanel("main panel")
+        mainPanel("main panel",
+                  output$text <- renderText({"You have selected this"})
+        )
     )
+    
 })
