@@ -25,12 +25,16 @@ The App
 
 The app is currently running on Shiny:
 
-https://abee82.shinyapps.io/mpg_app/
+[MPG App](https://abee82.shinyapps.io/mpg_app/)
 
 Source code can be found on 
 
-[Github](https://github.com/brownaa/DDP-Course-Project)  
+[Github](https://github.com/brownaa/DDP-Course-Project)
 
-and the Shiny app can be found here
+Data
+================================
 
-[MPG App](https://abee82.shinyapps.io/mpg_app/)
+```{r}
+data("mtcars")
+str(mtcars)
+```
