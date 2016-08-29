@@ -1,28 +1,34 @@
 ReproduciblePitch
 ========================================================
-author: Aaron Brown (aaron.brown@mac.com)
+author: Aaron Brown
 date: August 29, 2016
 autosize: true
 
-First Slide
+Intro
 ========================================================
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+This widget was created for the [Developing Data Products](https://www.coursera.org/learn/data-products/) class as part of the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) on [Coursera](http://www.coursera.org).
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+This widget uses the **mtcars** dataset in **library(MASS)** to build a regression model
 
-Slide With Code
+Regression model selection
 ========================================================
 
-```{r}
-summary(cars)
-```
+In order to select the best model, the **stepAIC()** function was used.
 
-Slide With Plot
+After some munging of **mtcars** dataset, the best model selected by AIC was
+
+*mpg ~ cyl + hp + wt + am*
+
+The App
 ========================================================
 
-```{r, echo=FALSE}
-plot(cars)
-```
+The app is currently running on Shiny:
+
+https://abee82.shinyapps.io/mpg_app/
+
+Source code can be found on 
+
+[Github](https://github.com/brownaa/DDP-Course-Project)  
+and  
+[Git Pages]()
