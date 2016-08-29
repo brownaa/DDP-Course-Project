@@ -30,5 +30,7 @@ https://abee82.shinyapps.io/mpg_app/
 Source code can be found on 
 
 [Github](https://github.com/brownaa/DDP-Course-Project)  
-and  
-[Git Pages]()
+
+and the Shiny app can be found here
+
+[MPG App](https://abee82.shinyapps.io/mpg_app/)
