@@ -16,8 +16,8 @@ shinyUI(fluidPage(
             sliderInput("wt", label = h4("Weight (lb)"), min = 1500, 
                         max = 5500, value = 1500),
             selectInput("am", label = h4("Automatic or Manual Transmission"), 
-                        choices = list("Automatic" = 1, "Manual" = 2), 
-                        selected = 1)
+                        choices = list("Automatic" = "Automatic", "Manual" = "Manual"), 
+                        selected = "Automatic")
             # fluidRow(
             #     column(3,
             #            h3("Buttons"),
@@ -28,8 +28,11 @@ shinyUI(fluidPage(
         ),
         
         mainPanel(
-            "Result",
-            textOutput("text")
+            h3("Result"),
+            br(),
+            h4("Based on the data you provided, the predicted miles per gallon will be:"),
+            br(),
+            h1(textOutput("newmpg"))
         )
     )
 ))
